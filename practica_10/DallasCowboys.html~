@@ -1,0 +1,181 @@
+<html>
+   <head>
+      <title>Dallas Cowboys</title>
+		<meta charset='utf-8'/>
+      <style type ="text/css">
+
+         p{
+				font-family: sans-serif;
+            font-weight: bold;
+            color: white;
+            text-align: justify;
+            padding:10px;
+			}
+
+         h{
+            font-family: sans-serif;
+            font-weight: bold;
+            font-style: italic;
+            font-size: 20px;
+            color: DarkGray;
+            text-align:center;
+            padding:10px;
+         }
+
+         li{
+				font-family: sans-serif;
+            font-weight: bold;
+            text-align: left;
+            color: white;
+            padding:10px;
+         }
+
+         a{
+				font-family: sans-serif;
+            font-weight: bold;
+            text-align: left;
+            color: white;
+            padding:10px;
+			}
+
+         table{
+            font-family: sans-serif;
+            font-weight:bold;    
+            text-align: justify;
+            padding: 15px;
+            color: LightGray;     
+         }
+
+      </style>
+   </head>
+
+      <body bgcolor="#051f51">
+         <center>
+				<tr><td><img src='imagenes/DallasCowboys_logo.jpg' width="20%"></td></tr>
+            <tr><td><h1><font color="#e3e5ea">Dallas Cowboys</font></h1></td></tr>
+         </center>
+
+         <p>Dallas Cowboys o Los Vaqueros de Dallas es una franquicia de fútbol profesional de la NFL (National Football League). Cabe aclarar que las franquicias en la NFL se caracterizan por ser equipos que pertenecen a una liga cerrada, es decir, no existen ascenos ni descensos en la liga. Regresando con los Dallas Cowboys, éstos pertenecen al Conferencia Nacional de la Liga (NFC) y compiten en la NFC East (División Este de la Conferencia Nacional). Cabe aclarar que disputan sus encuentros como local en el AT&T Stadium de Arlington, Texas.</p>
+
+      	<table cellpadding="10">
+            <tr>
+               <td><strong>Origen</strong></td>
+               <td><strong>Breve Historia</strong></td>
+            </tr>
+            <tr>
+               <td><img stc="RogerStaubach.jpg" align="right">La fundación de la franquicia de los Cowboys tuvo demasiadas dificultades, principalmente una fuerte oposición por parte del dueño de los Washington Redskins, George Preston Marshall, puesto que la creación de los Cowboys atentaba contra los intereses personales de Marshall y de la franquicia de los Redskins.</br>
+Clint Murchison, Jr. y Bedford Wynne, los dueños de los Cowboys, adquirieron los derechos de la canción de batalla de los Redskins, "Hail to the Redskins" y acordaron negarle a Marshall reproducir esa canción durante los juegos.</br>
+Debido a que necesitaba esta canción, Marshall se rindió, y la ciudad de Dallas, Texas, obtuvo una franquicia NFL el 28 de enero de 1960 durante la convención anual de la NFL en Miami, Florida.</td>
+
+               <td>La década de los 70's fue la época dorada y de consolidación de la franquicia. De la mano de Tom Landry(Head Coach) y de Roger Staubach (QB), consiguieron 7 títulos Divisionales, 5 de Conferencia y 5 apariciones en Super Bowl, ganando 2 ediciones del Super Domingo. Gracias a esto, Los Vaqueros ganaron tanta popularidad en EUA y México que le valió para ganarse el mote de "El Equipo de América".</br>
+La década de los 80's fue de crisis puesto que los éxitos comenzaron a desaparecer hasta convertirse en un de los peores equipos de la Liga; hasta que en 1989 Bum Bright, dueño de la franquicia, la vendió a Jerry Jones.</br>
+Con Jerry Jones, en los 90's, regresaron a la senda triunfadora. Con Jimmy Johnson (Head Coach), Troy Aikman (QB), Michael Irvin (WR), Emmit Smith (RB), Jay Novacek(TE), etc, obtuvieron 3 anillos de Súper Bowl.</br>
+Desde entonces, la franquicia ha tenido una sequía de apariciones en el Súper Bowl. Este 2016, con la contratación de los novatos Dak Prescott (QB) y Ezekiel Elliot (RB) esperan cambiar la historia.</td>
+            </tr>
+         </table>
+
+         <table cellpadding="10">
+            <tr>
+               <td><strong>Estadio</strong></td>
+            </tr>
+            <tr>
+               <td>Los Dallas Cowboys han jugado como local en 3 estadios diferentes:
+						<ul>
+							<li type="disc">Cotton Bowl: 1960-71</li>
+							<li type="disc">Texas Stadium: 1971-2008</li>
+							<li type="disc">AT&T Stadium: 2009-</li>
+						</ul>
+               </td>
+            </tr>
+         </table>
+
+         <p>Los Cowboys son uno de los equipos más populares de la NFL dentro y fuera de Estados Unidos. Su poder de convocatoria dentro del país puede ser ejemplificado con su récord de la NFL de más juegos consecutivos con estadios llenos. Fue una racha de 160 juegos de temporada regular y postemporada con todas las localidades vendidas que comenzó en 1990 donde se incluyen 79 juegos de local en el Texas Stadium, y 81 como visitantes.</br>Como mencionamos antes, es considerado "El Equipo de América"</p>
+
+
+	<div><h>Pálmares</h></div>
+	<table class="contenedor"cellpadding="5">
+		<tr>
+			<td>
+				<center><table>
+					<div align="center"><img src='imagenes/NFC_Champs_logo.jpg' width="50%"></div>
+					<tr><td>
+						<ul>
+							<li type="disc">70's: 1970 | 1971 |1975 | 1977 | 1978</li>
+							<li type="disc">90's: 1992 | 1993 | 1995</li>
+						</ul>
+					</td></tr>
+				</table></center>
+			</td>
+			<td>
+				<center><table width="100%" align="center" cellpadding="0" cellspacing="2" >
+					<div align="center"><img src='imagenes/SuperBowl_logo.jpg' width="60%"></div>
+
+               <tr>
+                  <td align="center"><strong>Fecha</strong></td>
+                  <td align="center"><strong>SuperBowl</strong></td>
+                  <td align="center"><strong>Rival</strong></td>
+                  <td align="center"><strong>Marcador</strong></td>
+                  <td align="center"><strong>Resumen</strong></td>
+               </tr>
+
+               <tr>
+                  <td align="center">16/Ene/1972</td>
+                  <td align="center">SB VI</td>
+                  <td align="center">Miami Dolphins</td>
+                  <td align="center">24-3</td>
+                  <td align="center"><a href="https://www.youtube.com/watch?v=Ukf3pj4MSV4" >SB VI</a></td>
+               </tr>
+
+               <tr>
+                  <td align="center">15/Ene/1978</td>
+                  <td align="center">SB XII</td>
+                  <td align="center">Denver Broncos</td>
+                  <td align="center">27-10</td>
+                  <td align="center"><a href="https://www.youtube.com/watch?v=Bgh3vrMAkTU">SB XII</a></td>
+               </tr>
+
+               <tr>
+                  <td align="center">31/Ene/1993</td>
+                  <td align="center">SB XXVII</td>
+                  <td align="center">Buffalo Bills</td>
+                  <td align="center">52-17</td>
+                  <td align="center"><a href="https://www.youtube.com/watch?v=knf1pwEReSw">SB XXVII</a></td>
+               </tr>
+
+               <tr>
+                  <td align="center">30/Ene/1994</td>
+                  <td align="center">SB XXVIII</td>
+                  <td align="center">Buffalo Bills</td>
+                  <td align="center">30-13</td>
+                  <td align="center"><a href="https://www.youtube.com/watch?v=ajNSegWmDPs">SB XXVII</a></td>
+               </tr>
+
+               <tr>
+                  <td align="center">28/Ene/1996</td>
+                  <td align="center">SB XXX</td>
+                  <td align="center">Pittsburgh Steelers</td>
+                  <td align="center">27-17</td>
+                  <td align="center"><a href="https://www.youtube.com/watch?v=h0GuaWyRtNg">SB XXVII</a></td>
+               </tr>
+				</table></center>
+			</td>
+			<td>
+				<center><table>
+					<div align="center"><img src='imagenes/Div_Champs_logo.jpg' width="35%"></div>
+					<tr><td>
+						<ul>
+							<li type="disc">70's: 1970 | 1971 | 1973 | 1976 | 1977 | 1978 | 1979</li>
+							<li type="disc">80's: 1981 | 1985</li>
+                     <li type="disc">90's: 1992 | 1993 | 1994 | 1995 | 1996 | 1998</li>
+                     <li type="disc">2000's: 2007 | 2009</li>
+                     <li type="disc">2010's: 2014</li>
+						</ul>
+					</td></tr>
+				</table></center>
+			</td>
+		</tr>
+	</table>
+	</center>
+	</div>
+   </body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Agenda Contactos</title>
+		<link rel="stylesheet" href="estilos.css">
+		<script  language="javascript">
+		var contactos = new Array();
+		
+		function get(id) {
+				return document.getElementById(id);
+			}
+
+			function contacto() {
+				this.nombre= "";
+				this.apeP = "";
+				this.apeM="";
+				this.nCas="";
+				this.nCel="";
+				this.correo="";
+		}
+
+			function despliegaAgrega(){
+				get("pA").style.display='inline';
+				get("pC").style.display='none';
+			}
+			
+			function despliegaContactos(){
+				get("pC").style.display='inline';
+				get("pA").style.display='none';
+				borraContactos();
+			}
+				
+			function borraContactos(){
+					get('pC').innerHTML='';
+				for (i = 0; i < contactos.length; i++) {
+					c = contactos[i];
+					div = document.createElement('div');
+					div.setAttribute('class','contacto');
+					div.innerHTML =
+					"<p><span>Nombre: </span> "+c.nombre + "  <span>Apellidos:</span>"+c.apeP + " "+c.apeM+"  <span>Numero Casa:</span>"+c.nCas + " <span>Numero Cel:</span>"+c.nCel + "  <span>Correo: </span>"+c.correo
+					+"  <button onclick='elimina("+i+");'>Borrar</button></p>";
+					
+					get('pC').appendChild(div);
+				}
+				
+			}
+			function elimina(contact){
+				
+				
+				
+				eliminado=contact;
+				nuevo= new Array();
+				for(x = 0; x < contactos.length; x++){
+					if(x!=contact){
+						nuevo[nuevo.length]=contactos[x];
+					}					
+				}
+				contactos=nuevo;
+				borraContactos();
+				alert("El contacto "+eliminado.nombre+"  "+eliminado.apeP+" ha sido borrado");
+				
+			}
+
+			function guardaDatos(){
+				c=new contacto();
+				c.nombre=get('nom').value;
+				c.apeP=get('ape_p').value;
+				c.apeM=get('ape_m').value;
+				c.nCas=get('telcasa').value;
+				c.nCel=get('telcel').value;
+				c.correo=get('correo').value;
+				
+				contactos[contactos.length]=c;
+				get('nom').value="";
+				get('ape_p').value="";
+				get('ape_m').value="";
+				get('telcasa').value="";
+				get('telcel').value="";
+				get('correo').value="";
+				alert("El nuevo contacto ha sido agregado exitosamente.");
+
+			}
+		
+		</script>
+	</head>
+	<body>
+		<div id='vista'><img src='Imagenes/ban.jpg' width='100%'></div>
+		<div>
+			<center><table>
+				<tr>
+					<td>
+						<div>
+							<center><a href="#pA" onclick="despliegaAgrega();">Agregar Contacto</a></center>
+						</div>
+					</td>
+					<td>
+						<div>
+							<center><a href="#pC" onclick="despliegaContactos();" >Mis Contactos</a></center>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div>
+							<center><a href="#pA" onclick="despliegaAgrega();"><img src='Imagenes/agrega.png' width='50%'></a></center>
+						</div>
+					</td>
+					<td>
+						<div>
+							<center><a href="#pC" onclick="despliegaContactos();" ><img src='Imagenes/contactos.png' width='60%'  ></a></center>
+						</div>
+					</td>
+				</tr>
+			</table>
+			<div id='pA' style="display:none">
+				<center><table>
+				<tr>
+					<td><h2>Nombres</h2></td>
+					<td><input type="text" id="nom" /></td>
+				</tr>
+				<tr>
+					<td><h2>Apellido paterno</h2></td>
+					<td><input type="text" id="ape_p" /></td>
+				</tr>
+				<tr>
+					<td><h2>Apellido materno</h2></td>
+					<td><input type="text" id="ape_m" /></td>
+				</tr>
+				<tr>
+					<td><h2>Teléfono de casa</h2></td>
+					<td><input type="tel" id="telcasa" /></td>
+				</tr>
+				<tr>
+					<td><h2>Celular</h2></td>
+					<td><input type="tel" id="telcel" /></td>
+				</tr>
+				<tr>
+					<td><h2>Correo</h2></td>
+					<td><input type="mail" id="correo" /></td>
+				</tr>
+				<tr>
+					<td><center><button onclick="guardaDatos();">Agregar</button></center></td>
+				</tr>
+				</table> </center>
+				
+			</div>
+			<div id='pC' style="display:none">
+			</div>
+			</center>
+			
+		</div>
+		
+		
+	</body>
+	
+</html>
