@@ -1,0 +1,8 @@
+public class Carta{
+
+   public int valor;
+   public int suma_acum;
+
+   return 
+
+}
