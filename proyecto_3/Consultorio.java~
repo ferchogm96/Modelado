@@ -1,0 +1,37 @@
+import java.awt.*;
+import java.awt.event.ActionListener; 
+import java.awt.event.ActionEvent; 
+
+import javax.swing.*;
+import javax.swing.JOptionPane; 
+import javax.swing.JFrame;
+import javax.swing.JTabbedPane;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JButton;
+import javax.swing.JTextField; 
+import javax.swing.JPasswordField; 
+import javax.swing.ImageIcon;
+
+import java.io.*;
+import java.util.ArrayList;
+
+public class Consultorio extends JFrame{
+   
+   private String nom_archivo="consultorio.ser";
+   ArrayList<Paciente> consultas = new ArrayList<Paciente>();
+   JTabbedPane fichas = new JTabbedPane();
+
+   public Consultorio(){
+      super("Clínica Dental");
+      consultas = leerConsultas();
+      ponPestaniaInicio();
+      ponPestaniaVerCitas();
+      ponPestaniaRegistrarCita();
+      ponPestaniaCancelarCitar();
+      ponPestaniaSalir();
+      add(fichas);
+   }
+}
+
+

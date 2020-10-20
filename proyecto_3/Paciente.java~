@@ -1,0 +1,63 @@
+import java.io.Serializable;
+
+public class Paciente implements Serializable{
+
+   private String nombre;
+   private String hora_consulta;
+   private String min_consulta;
+   private Paciente anterior;
+   private Paciente siguiente;
+
+   public Paciente(String nombre, String hora, String min){
+      this.nombre = nombre;
+      this.hora_consulta = hora;
+      this.min_consulta = min;
+      this.anterior = null;
+      this.siguiente = null;
+   }
+
+   public String toString(){
+      return this.nombre+". Hora de consulta: "+this.hora_consulta+":"+this.min_consulta+" hrs.";
+   }
+
+   public String getNombre(){
+      return this.nombre;
+   }
+
+   public String getHora(){
+      return this.hora_consulta;
+   }
+
+   public String getMin(){
+      return this.min_consulta;
+   }
+
+   public Paciente getAnterior(){
+      return this.anterior;
+   }
+   
+   public Paciente getSiguiente(){
+      return this.siguiente;
+   }
+
+   public void setNombre(String nombre){
+      this.nombre = nombre;
+   }
+
+   public void setHora(String hora){
+      this.hora_consulta = hora;
+   }
+   
+   public void setMin(String min){
+      this.min_consulta = min;
+   }
+
+   public void setAnterior(Paciente ant){
+      this.anterior = ant;
+   }
+
+   public void setSiguiente(Paciente sig){
+      this.siguiente = sig;
+   }
+
+}

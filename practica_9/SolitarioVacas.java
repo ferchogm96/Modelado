@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class SolitarioVacas{
+
+   String[][] tablero;
+
+   public void recorrerMatriz(Carta[][] tablero, int n){
+      for(int i = 0; i<tablero.length; i++){
+         for(int j = 0; j<tablero.length; j++){
+
+            if( i+1 <= n){
+
+               if( tablero[i+1][j].suma < (tablero[i][j].suma + tablero[i+1][j].valor)  )
+                  tablero[i+1][j].suma = tablero[i][j].valor+tablero[i+1][j].valor;
+
+            }
+
+            if( j+1 <= n ){
+               if( tablero[i][j+1].suma < (tablero[i][j].suma + tablero[i+1][j].valor) )
+                  tablero[i][j+1].suma = tablero[i][j].valor+tablero[i+1][j].valor;
+            }
+
+
+         }
+      }
+
+      return tablero[n][n];
+   }
+
+   public void sacaCarta()
+
+   
+
+   public static void main(String[] args){
+      Scanner sc = new Scanner(System.in);
+      String[][] tab;
+      
+      System.out.print("Línea 1: ");
+      String dimension = sc.nextInteger();
+      tab = new String[dimension][dimension];
+
+      for (int i=0; i<dimension; i++){
+         System.out.print("Línea "+(i+1)+": ");
+         String c1 = sc.nextLine().replaceAll(" ", "");
+         Carta c = new Carta(c1);
+      }
+   }
+}
